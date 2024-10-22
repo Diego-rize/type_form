@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Types</title>
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-md-8 form-container">
+                <h1 class="text-center">Types of forms fields</h1>
+                <!-- Start of form -->
+                <form action="#" method="post">
+                    <!-- Text field fot the name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name(s):</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <!-- Email field -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <!-- password field -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <!-- Numeric field -->
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age" min="1" max="120" required>
+                    </div>
+                    <!-- date field -->
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date of birthday</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <!-- check box/ -->
+                    <div class="mb-3 form-check">
+                        <label for="newsletter" class="form-check-label">Suscribe to the newsletter:</label>
+                        <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" value="yes"
+                            required>
+                    </div>
+                    <!-- radio button field -->
+                    <div class="mb-3">
+                        <label class="form-label">Gender:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="other" name="gender" value="other">
+                            <label class="form-check-label" for="other">Others</label>
+                        </div>
+                    </div>
+
+                    <!-- dropdown lsit -->
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country:</label>
+                        <select class="form-select" name="country" id="country">
+                            <option value="">Select a country</option>
+                            <option value="mx">Mexico</option>
+                            <option value="es">Spain</option>
+                            <option value="ar">Argentina</option>
+                            <option value="co">Colombia</option>
+                            <option value="pe">Peru</option>
+                        </select>
+                    </div>
+                    <!-- text area -->
+                    <div class="mb-3">
+                        <label class="form-label" for="coments">Coments</label>
+                        <textarea class="form-control" name="comments" id="comments" rows="4">s</textarea>
+                    </div>
+                        <!--File upload field-->
+                        <div class="mb-3">
+                            <label for="file" class="form-label">Upload file:</label>
+                            <input type="file" class="form-control" id="file" name="file" accept="*" multiple>
+                    
+                    </div>
+                    <!-- Color picker -->
+                     <div class="mb-3">
+                        <label for="Color" class="form-label">Choose a Color</label>
+                        <input type="color" class="form-control form-control-color" id="color" name="color">
+                     </div>
+                     <!--Slider control-->
+                     <div class="mb-3">
+                        <label for="range" class="form-label">Satisfaction level (1-10):</label>
+                        <input type="range" class="form-range" id="range" name="range" min="1"
+                        max="10">
+                        <p>Value: <output id="range_value"></output></p>
+                    </div>
+                    <!--phone field-->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{9}">
+                    </div>
+                    <!--Url field-->
+                    <div class="mb-3">
+                        <label for="Url" class="form-label">website</label>
+                        <input type="url" class="form-control" id="url" name="url">
+
+                    </div>
+                    <!--time field-->
+                    <div class="mb-3">
+                        <label for="hour" class="form-label">Preferred Contact Time</label>
+                        <input type="time" class="form-control" id="hour" name="hour">
+
+                    </div>
+                    <!--month field-->
+                    <div class="mb-3">
+                        <label for="month" class="form-label">Preferred Contact Time</label>
+                        <input type="month" class="form-control" id="month" name="month">
+
+                    </div>
+                     <!--month field-->
+                     <div class="mb-3">
+                        <label for="week" class="form-label">Preferred Contact Time</label>
+                        <input type="week" class="form-control" id="week" name="week">
+                        <!-- map -->
+                         <div class="mb-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14938.222602834765!2d-87.09823545107295!3d20.606196245028812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e4369ee689ecd%3A0x71b0a8ebcb728519!2sPlayacar%20Beach!5e0!3m2!1ses!2smx!4v1729086038718!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                         </div>
+
+                    </div>
+
+                    <!-- send and reset buttons -->
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
